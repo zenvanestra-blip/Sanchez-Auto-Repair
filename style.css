@@ -1,0 +1,140 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #b266ff; /* soft neon purple */
+  margin-top: 50px;
+}
+
+p {
+  color: #cccccc; /* softer white for contrast */
+  font-size: 18px;
+}
+h2 {
+  color: #b266ff; /* same purple as the logo */
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none; /* removes browser default bullets */
+  padding: 0;
+  margin: 20px auto; /* centers the list */
+  display: inline-block; /* keeps it centered under the heading */
+  text-align: left; /* keeps bullets aligned */
+}
+
+li {
+  color: #cccccc;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+li::before {
+  content: "• "; /* adds purple bullet */
+  color: #b266ff;
+}
+form {
+  margin: 40px auto;
+  display: inline-block;
+  text-align: left;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b266ff;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input, textarea {
+  background-color: #000000;
+  border: 1px solid #b266ff;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #b266ff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d9b3ff;
+}
+/* ===== Location Section Styling ===== */
+#location {
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #8000ff; /* purple highlight */
+}
+
+#location h2 {
+  color: #a64dff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+#location p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#location iframe {
+  width: 90%;
+  max-width: 500px;
+  height: 300px;
+  border: 2px solid #8000ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #8000ff55;
+}
+/* ===== Responsive Design (Mobile) ===== */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #services ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  #contact form, 
+  #location iframe {
+    width: 100%;
+  }
+
+  #location iframe {
+    height: 250px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
