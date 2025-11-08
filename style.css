@@ -138,3 +138,37 @@ button:hover {
     padding: 12px;
   }
 }
+/* ===== Gallery Section ===== */
+#gallery {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 2px solid #8000ff;
+}
+
+#gallery h2 {
+  color: #a64dff;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #8000ff55;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
