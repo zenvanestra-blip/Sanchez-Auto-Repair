@@ -25,6 +25,28 @@ h1 {
   font-size: 2em;
   margin-bottom: 20px;
 }
+/* ===== Light Mode Overrides ===== */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #222; /* darker text for light background */
+}
+/* ===== Light Mode Fix for Services Section ===== */
+body.light-mode #services {
+  background-color: #f9f9f9;
+}
+
+body.light-mode #services h2 {
+  color: #8000ff; /* keeps a readable purple heading */
+}
+
+body.light-mode #services li,
+body.light-mode #services p {
+  color: #333; /* makes sure list text is dark on light background */
+}
+body.light-mode p {
+  color: #333;
+}
 
 #mission p {
   color: #ccc;
@@ -57,7 +79,6 @@ h2 {
   margin-top: 40px;
   text-transform: uppercase;
 }
-
 ul {
   list-style: none; /* removes browser default bullets */
   padding: 0;
